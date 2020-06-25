@@ -65,7 +65,7 @@ router.get('/manage-users', function (req, res, next) {
 /******         delete users             ********/
 /************************************************/
 
-router.get("/user-delete/:_id", protectAdminRoute, (req, res, next) => {
+router.get("/user-delete/:_id", (req, res, next) => {
     userModel
         .findByIdAndDelete(req.params.id)
         .then((dbRes) => res.redirect("/manage-users"))
@@ -77,7 +77,7 @@ router.get("/user-delete/:_id", protectAdminRoute, (req, res, next) => {
 /******          edit users              ********/
 /************************************************/
 
-router.get("/user-edit/:id", protectAdminRoute, (req, res, next) => {
+router.get("/user-edit/:id", (req, res, next) => {
     console.log("whats in req.params.id", req.params.id)
     userModel
         .findById(req.params.id)

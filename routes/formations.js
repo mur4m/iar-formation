@@ -23,7 +23,7 @@ const loginStatus = require("./../middlewares/exposeLoginStatus")
 
 
 
-  router.get('/form-formation-add', protectAdminRoute,loginStatus,function(req, res, next) {
+  router.get('/form-formation-add', loginStatus,function(req, res, next) {
     res.render('form-formation-add', { title: 'Formations' });
   });
 
@@ -34,7 +34,7 @@ const loginStatus = require("./../middlewares/exposeLoginStatus")
 /************************************************/
 
 /* GET manage-formation page */
-router.get(['/formation-add','/manage-formations'], loginStatus,protectAdminRoute,function(req, res, next) {
+router.get(['/formation-add','/manage-formations'], loginStatus, function(req, res, next) {
     console.log("inside 'req.body'", req.body)
     formationModel
     .find()
@@ -90,7 +90,7 @@ router.get(['/formation-add','/manage-formations'], loginStatus,protectAdminRout
 /******       delete formations          ********/
 /************************************************/
 
-router.get("/form-delete/:id",loginStatus,protectAdminRoute,(req, res, next) => {
+router.get("/form-delete/:id",loginStatus, (req, res, next) => {
     formationModel
         .findByIdAndDelete(req.params.id)
         .then((dbRes) => res.redirect("/manage-formations"))
@@ -102,7 +102,7 @@ router.get("/form-delete/:id",loginStatus,protectAdminRoute,(req, res, next) => 
 /******       edit formations            ********/
 /************************************************/
 
-router.get("/form-edit/:id",protectAdminRoute,loginStatus,(req, res, next) => {
+router.get("/form-edit/:id", loginStatus,(req, res, next) => {
     console.log("whats in req.params.id", req.params.id)
     formationModel
         .findById(req.params.id)
