@@ -1,0 +1,30 @@
+.formation-img img{
+    max-width: 250px;
+}
+
+.manage-container{
+    padding-bottom: 14em;
+    padding-top: 5em;
+    color: dimgrey;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.hache-gestion-form{
+    text-align: center;
+}
+
+.hr-gestion-form{
+    display: block;
+    margin: auto;
+    width: 200px;
+}
+
+.product-manage-table{
+    margin-top: 2em;
+}
+
+.no-formations{
+    color: slategrey;
+    text-align: center;
+}

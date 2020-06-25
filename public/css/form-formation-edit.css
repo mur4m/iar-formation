@@ -1,0 +1,11 @@
+.edit-container{
+    display: block;
+    width: 500px;
+    margin: auto;
+    margin-top: 10em;
+    margin-bottom: 14em;
+}
+
+.edit-form-btn{
+    width: 300px;
+}

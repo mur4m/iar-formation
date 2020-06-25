@@ -1,0 +1,87 @@
+.bodyaddformation{
+    background: #222;
+    color: white;
+}
+
+.formation-container{
+    display: flex;
+    min-width: 320px;
+    min-height: 500px;
+    margin: 12em;
+    margin-top: 0;
+    padding: 2em;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn-add-formation{
+    flex: 1;
+    width: 190px;
+    margin: auto;
+    margin-bottom: 4em;
+    margin-top: 2em;
+    border: none;
+    border-bottom: 1px solid #333;
+    background: none;
+    color: white;
+    background-size: 100% 200%;
+    background-image: linear-gradient(to bottom, #222 50%, #0099ff);
+    transition: background-position 0.3s;
+}
+
+.btn-add-formation:hover {
+    background-color:  #0099ff;
+    color: black;
+    font-weight: 600;
+    background-position: 0 100%;
+    border: none;
+  }
+  
+
+
+
+.all-description{
+    width: 300px;
+    border: 1px solid gray;
+    padding: 2em;
+    margin: 1em;
+    margin-top:2em;
+}
+
+.all-description div{
+    padding-top: 3em;
+}
+
+.long-description{
+    width: 600px;
+    padding-left: 3em;
+}
+
+textarea{
+    width: 600px;
+    height: 500px;
+    color: azure;
+}
+
+.form-input.form-descr{
+    border: 1px solid gray;
+}
+
+.form-input{
+    border: none;
+    border-bottom: 1px solid gray;
+    background: none;
+}
+
+.hacheformation{
+    margin-top: 4em;
+    color: white;
+    text-align: center;
+}
+
+hr{
+    width: 190px;
+    margin: auto;
+    background: #333;
+    font-family: 'Roboto', sans-serif;
+}

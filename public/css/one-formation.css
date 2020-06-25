@@ -1,0 +1,32 @@
+.one-form-body{
+    background-image: url(/images/red-bench.jpeg);
+}
+
+.one-formation-box{
+    margin: 12em;  
+}
+
+.margin-formation{
+    display: block;
+    width: 1000px;
+    margin: auto;
+    padding-bottom: 14em;
+    flex-wrap: wrap;
+}
+
+.one-formation-mini{
+    height: 300px;
+    width: 800px;
+    display: block;
+    margin: auto;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.hache-one-form{
+    color: white;
+}
+
+.hr-one-form{
+    background: white;
+}

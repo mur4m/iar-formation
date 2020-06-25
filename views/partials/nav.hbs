@@ -1,0 +1,77 @@
+<header class="header">
+  <nav class="navbar navbar-expand-lg navbar-dark noir">
+    <a class="navbar-brand" href="/">IAR formation</a>
+    <figure><img src="" alt=""></figure>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Acceuil<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="/formations">Formations</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="/Sur-mesure">Sur Mesure</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="/contact">Contact</a>
+        </li>
+        {{#if isLoggedIn}}
+        <li class="nav-item animated-link nav-item-admin">
+          <a href="/form-formation-add" class="nav-link">Ajouter formation</a>
+        </li>
+        {{/if}}
+    {{!-- </div>
+    <div class="flexed-item nav-end"> --}}
+      {{#unless isLoggedIn}}
+      <li class="nav-item ">
+      <a href="/signup" id="nav_login" class="button-ternary flexed-item nav-end-item nav-link">
+        <span class="btn-text">Sign in</span>
+      </a>
+      </li>
+      {{/unless}}
+      {{#if isLoggedIn}}
+      <li class="nav-item "> 
+      <a href="/logout" id="nav_logout" class="button-ternary flexed-item nav-end-item nav-link">
+        <span class="btn-text">Log out</span>
+      </a>
+      </li>
+         </ul>
+      {{/if}}
+    {{!-- </div> --}}
+ 
+    </div>
+  </nav>
+</header>
+
+
+
+{{!-- <nav class="nav-wrapper flexed-item">
+            <div class="logo">
+            <a href="/">
+              <h2 class="logo-item">IAR Formation</h2>
+            </a>
+            </div>
+
+        <div class="menu">
+        <ul class="nav-link flexed-item">
+          <li class="nav-item animated-link">
+            <a href="/">Acceuil</a>
+          </li>
+          <li class="nav-item animated-link">
+            <a href="/Formations">Formations</a>
+          </li>
+          <li class="nav-item animated-link">
+            <a href="/Sur-mesure">Sur Mesure</a>
+          </li>
+          <li class="nav-item animated-link">
+            <a href="/Contact">Contact</a>
+          </li>
+        </ul>
+        </div>
+
+    </nav> --}}

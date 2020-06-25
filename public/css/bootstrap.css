@@ -1,0 +1,47 @@
+/* main{
+    background: grey;
+    min-height: 100vh;
+} */
+
+header{
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+}
+.navbar-nav{
+    position: fixed;
+    right: 20px;
+    height: auto;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link {
+    color: red
+}
+
+/* 
+article{
+    height: 600px;
+} */
+
+.noir{
+    background: black;
+}
+
+/*first section*/
+/* main>section:first-child>article:first-child{
+    background: khaki;
+}
+main>section:first-child>article:nth-child(2){
+    background: rgb(202, 192, 102);
+}
+main>section:first-child>article:last-child{
+    background: rgb(179, 168, 76);
+} */
+
+/* second section
+main>section:nth-child(2)>article:first-child{
+    background: rgb(105, 185, 216);
+}
+main>section:nth-child(2)>article:last-child{
+    background: rgb(143, 198, 207);
+} */

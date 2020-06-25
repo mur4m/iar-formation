@@ -1,0 +1,446 @@
+@import'./dashboard.css';
+@import'./manage-message.css';
+@import'./formations.css';
+@import'./bootstrap.css';
+@import'./manage-formations.css';
+@import'./footer.css';
+@import'./form-formation-add.css';
+@import'./form-formation-edit.css';
+@import'./one-formation.css';
+@import'./signin.css';
+@import'./form-user-edit.css';
+@import'./sur-mesure.css';
+@import'./contact.css';
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+/************************************************/
+/******        NAV (from partials)       ********/
+/************************************************/
+/* nav bar */
+header{
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  top: 0;
+}
+
+.navbar-nav{
+  height: auto;
+  /* right: 20px; */
+}
+
+.navbar-dark .navbar-nav .active>.nav-link {
+  color: red
+}
+
+/* .navbar-nav li:focus{
+  color: #0099ff;
+ background:#0099ff;
+} */
+
+
+/************************************************/
+/******             CAROUSEL             ********/
+/************************************************/
+.carousel .carousel-inner{
+  height:580px
+  }
+  .carousel-inner .carousel-item img{
+  height:580px;
+  /*prevent it from stretch in screen size < than 768px*/
+  object-fit:cover
+  }
+  .carousel .carousel-inner{
+    /*prevent it from adding a white space between carousel and container elements*/
+    height:auto
+     }
+  
+  .blackpara,.blackh5{
+  color: black !important;
+  }
+
+/************************************************/
+/******   SECTION DEUX  (nos formations) ********/
+/************************************************/
+.section{
+  width: 100%;
+  height: 70vh;
+  background: #eee;
+}
+
+.deux{
+  height: 55vh;
+}
+
+/* icones formations proposés */
+
+.formicons{
+  display: flex;
+  justify-content: space-around;
+  /* width: 500px; */
+  margin: auto;
+  padding-top: 20px;
+}
+
+.fa-tasks, .fa-baby, .fa-user-cog{
+  color: #fff;
+  background: #222;
+  font-size: 50px;
+  padding: 10px;
+  /* border-radius: 25px; */
+}
+
+/* .artitext{
+  text-justify: auto;
+  margin: 0 10em;
+} */
+
+.artitext {
+  margin: auto;
+  margin-top: 3em;
+  width: 80%;
+  padding: 5px;
+}
+
+/************************************************/
+/******  SECTION TROIS  (about robert)   ********/
+/************************************************/
+.trois{
+	background-image: linear-gradient(45deg, #0077BF, #eaafc8);
+	transform: skewY(-11deg);
+}
+
+.robertcontainer{
+  display: flex;
+  /* justify-content: space-around; */
+  margin: auto;
+  width: 90%;
+  padding: 5px;
+  padding-top: 8em;
+}
+
+.aboutrobert, .robert {
+	max-width: 50em;
+	margin: 0 auto;
+  transform: skewY(11deg); 
+}
+
+.aboutrobert{
+  padding-top: 3em;
+  padding-left: 2em;
+}
+
+.robert{
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-left: 3em;
+
+}
+
+/************************************************/
+/******   SECTION 4  (certifications)    ********/
+/************************************************/
+.quatre{
+  height: 80vh;
+}
+.hachecertif{
+  color: #0099ff;
+  text-align: center;
+  padding-top: 30px;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.one-titre-pro{
+  height: 100px;
+  min-width: 300px;
+  margin: 5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.titre-pro-container{
+  padding: 2em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.fa-medal{
+  font-size: 3em;
+}
+.fixed-cpf{
+  width: 4em;
+  height: 6em;
+  background: yellow;
+  position: fixed;
+  right: 0;
+  z-index: 1;
+  border: 1px solid yellow;
+  box-shadow: 0px 5px 50px #ddd, 0 5px 20px rgb(0, 0, 0);
+}
+
+.vertical-text{
+  padding: 1em;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-weight: 700;
+}
+
+.fixed-cpf a{
+  color: #222;
+  text-decoration: none;
+}
+
+.fixed-cpf a:hover{
+  color: #fff;
+  text-decoration: none;
+}
+
+.fixed-cpf:hover{
+  background: rgb(205, 27, 27);
+  border: none;
+}
+
+/************************************************/
+/******            FORMULAIRE            ********/
+/************************************************/
+/* give a colour to the container */
+.formcontainer{
+  background: #222;
+  padding: 0 15% 15%;
+  width: 100%;
+  height: 110vh;
+}
+
+/* setting the parent element "form" to flex */
+/* so kids will be displayed vertically */
+
+
+form{
+  display: flex;
+  flex-direction: column;
+}
+
+/* inputs will be white and each one of them will have some space from the 
+one peceeding it */
+
+.line{
+  color: white;
+  padding: 1%;
+  margin-top: 3%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #777;
+}
+
+/* the button to enter a msg is wider than the other inputs*/
+
+.mess{
+  color: white;
+  padding-bottom: 8%;
+}
+
+/* button to send the form : place further down than the other inputs */
+
+.buttonsub{
+  /* text-decoration: underline 1px solid white; */
+  margin: auto;
+  margin-top: 10%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  width: 65px;
+  height: 25px;
+  color: #fff;
+  background-size: 100% 200%;
+  background-image: linear-gradient(to bottom, #222 50%, #0099ff);
+  transition: background-position 0.3s;
+  cursor: pointer;
+}
+
+
+/* on hover of it, gimme a blue background */
+
+.buttonsub:hover {
+  background-color:  #0099ff;
+  color: black;
+  font-weight: 600;
+  background-position: 0 100%;
+  border: none;
+}
+
+/* gathering my h and displaying it one under the other with flex */
+
+.hachegroup{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-weight: 100;
+  margin-bottom: 10%;
+}
+
+.hache2{
+  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Roboto Mono', monospace; */
+  font-weight: 400;
+  
+  /* font-family: 'Piedra', cursive; */
+}
+/* still in my hgroup, specifiying different style for my h1 */
+
+.hache1{
+  color: #eee;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 100;
+  font-size: 12px;
+  padding: 5% ;
+}
+
+.carousel-inner > .item > img {
+  width:540px;
+  height:360px;
+}
+
+  
+/************************************************/
+/******         MEDIA QUERIES            ********/
+/************************************************/
+
+@media(max-width:1083px){
+  .quatre{
+    height: 200vh;
+  }
+}
+  @media(max-width:991px){
+    .navbar-nav{
+      position: absolute;
+      height: auto;
+      background: black;
+      right: 0;
+      min-height: 100vh;
+      min-width: 100%;
+      display: flex;
+      justify-content: space-around;
+        }
+    
+    .nav-item{
+      text-align: center;
+    }
+    
+  .carousel .carousel-inner{
+  /*prevent it from adding a white space between carousel and container elements*/
+  height:auto
+   }
+
+   .deux{
+     height: 45vh;
+   }
+   
+   .trois{
+     height: 60vh;
+   }
+
+   .robertcontainer{
+     display: flex;
+     flex-direction: column;
+     padding-top: 3em;
+   }
+
+   .robert{
+    display: block;
+    margin: auto;
+  }
+  .formcontainer{
+    height: 55vh;
+  }
+  
+  .quatre{
+    height: 110vh;
+  }
+  /* .slider .div .carousel-inner .div .p{
+    z-index: -100;
+  }
+
+  /* <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="/images/pineapple.jpeg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      </div> */ 
+      .slider div .caroussel-3{
+        background-image: url("/images/cardman-caroussel.jpeg");
+      }
+
+  }
+
+  @media(max-width:568px){
+    .deux{
+      height: 130vh;
+    }
+
+    .trois{
+      height: 176vh;
+  }
+  .robertcontainer{
+    padding-top: 2em;
+  }
+
+  .formcontainer{
+    height: 75vh;
+  }
+
+  .fa-twitter{
+    font-size: 2px;
+  }
+
+  .quatre{
+    height: 200vh;
+  }
+
+  .fixed-cpf{
+    display: none;
+  }
+  
+  .footer-fake{
+    height: 20vh;
+  }
+
+}
+/************************************************/
+/******  HOW TO STYLE FONT AWESOME ICONS  ********/
+/************************************************/
+/* how to use font awesome */
+
+/* custom styling for specific icons */
+/* 
+.fa-fish {
+  color: salmon;
+} */
+
+
+/* custom styling for all icons */
+
+/* i.fas,
+i.fab {
+border: 1px solid red;
+} */

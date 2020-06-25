@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* give a colour to the container */
+.container{
+    background: #222;
+    padding: 0 15% 15%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* setting the parent element "form" to flex */
+/* so kids will be displayed vertically */
+
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+/* inputs will be white and each one of them will have some space from the 
+one peceeding it */
+
+.line{
+    color: white;
+    padding: 1%;
+    margin-top: 3%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #777;
+}
+
+/* the button to enter a msg is wider than the other inputs*/
+
+.mess{
+    color: white;
+    padding-bottom: 8%;
+}
+
+/* button to send the form : place further down than the other inputs */
+
+.btn{
+    text-decoration: underline 1px solid white;
+    margin: auto;
+    margin-top: 10%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    width: 55px;
+    height: 25px;
+    color: #fff;
+    background-size: 100% 200%;
+    background-image: linear-gradient(to bottom, #222 50%, rgb(0, 153, 255));
+    transition: background-position 0.3s;
+    cursor: pointer;
+}
+
+
+/* on hover of it, gimme a yellow background */
+
+button:hover {
+    background-color:  #0077BF;
+    color: black;
+    font-weight: 600;
+    background-position: 0 100%;
+    border: none;
+}
+
+/* gathering my h and displaying it one under the other with flex */
+
+hgroup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-weight: 100;
+    margin-bottom: 10%;
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto Mono', monospace; */
+    font-weight: 400;
+
+    /* font-family: 'Piedra', cursive; */
+}
+/* still in my hgroup, specifiying different style for my h1 */
+
+h1{
+    color: #eee;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 100;
+    font-size: 12px;
+    padding: 5% ;
+}
+
+/* social media link */
+
+/* i{
+    margin: auto;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-top: 2em;
+} */
+
+.fa-twitter{
+    margin: auto;
+    border: 1px solid #777;
+    border-radius: 50%;
+    margin-top: 2em;
+    padding: 2%;
+    cursor: pointer;
+    color: #777;
+}
+
+.fa-twitter:hover{
+    color: #0077BF;
+    /* color: white; */
+    /* border: 1px solid rgb(0, 153, 255); */
+    background: white;
+}
+
+/* copyrights */
+
+p{
+    color: #777;
+    margin: auto;
+    margin-top: 10%;
+    font-family: 'Roboto Mono', monospace;
+
+}
+
+/* how to use font awesome */
+
+/* custom styling for specific icons */
+/* 
+.fa-fish {
+    color: salmon;
+  } */
+
+
+/* custom styling for all icons */
+
+/* i.fas,
+i.fab {
+  border: 1px solid red;
+} */

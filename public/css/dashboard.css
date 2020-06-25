@@ -1,0 +1,81 @@
+/* DASHBOARD */
+
+.dashboard-sec{ 
+    margin-bottom: 24em;
+}
+
+.user-give-role{
+    color: white;
+    width: 4em;
+    height: 16em;
+    background: brown;
+    position: fixed;
+    left: 0;
+    z-index: 1;
+    box-shadow: 0px 5px 50px #ddd, 0 5px 20px rgb(0, 0, 0);
+    text-decoration: none;
+  }
+  
+  .vertical-text{
+    padding: 1em;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-weight: 700;
+  }
+  
+  .user-give-role a{
+    color: #ddd;
+    text-decoration: none;
+  }
+   
+  .user-give-role a:hover{
+    text-decoration: none;
+  }
+    
+    .user-give-role:hover{
+    color: #222;
+    border: none;
+    background: yellow;
+    text-decoration: none;
+  }
+
+.welcome {
+    text-align: center;
+    font-family: 'Major Mono Display', monospace;
+    font-family: 'Monoton', cursive;
+    /* font-family: 'Major Mono Display', monospace; */
+    color: white;
+    font-size: 40px;
+}
+
+.dashylinks {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 90px 100px 0;     
+    margin-top: 12em;
+}
+
+.horse {
+    background-image: url(./../images/chess.jpeg);
+}
+
+
+.dashylinks a {
+    border: 1px solid #777;
+    border-radius: 25px;
+    /* font-family: 'Allerta Stencil', sans-serif; */
+    /* font-family: 'Orbitron', sans-serif; */
+    font-family: 'Raleway Dots', cursive;
+    padding: 10px;
+    color: white;
+} 
+
+.dashylinks a:hover {
+    text-decoration: none;
+    color: black;
+    background: white;
+}
+

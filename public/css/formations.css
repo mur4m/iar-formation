@@ -1,0 +1,286 @@
+.body-formation{
+	background: #222;
+}
+.hache-title{
+	margin-top: 6em;
+}
+.hache-all-formations{
+	text-align: center;
+	color: white;
+}
+.hr-all-formations{
+	display: block;
+	width: 200px;
+	margin: auto;
+	color: slategrey;
+}
+
+.formationbox{
+ margin-top: 5em;
+ width: 100%;
+ min-height: 600px;
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: space-around;
+ padding-bottom: 4em;
+ overflow: scroll;
+
+}
+
+.oneBox{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    height: 300px;
+    /* background-image: url(/images/bodyformation.jpeg); */
+    width: 320px;
+    margin: 2em;
+	text-align: center;
+}
+.one-hache{
+	/* min-height: 20px; */
+	position: absolute;
+	/* font-family: 'Roboto Mono', monospace;
+	font-weight: 100;
+	font-size: 8px; */
+	/* top: 0; */
+}
+
+.hache-formations{
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 600;
+	font-size: 18px;
+	color: azure;
+}
+
+.one-image{
+	width: 320px;
+	height: 300px;
+}
+
+.formationWrapper{
+    height: 310px;
+	width: 460px;
+	background: url("http://ohlookawebsite.com/bathroomtestfull.jpg") no-repeat center center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.formationWrapper:after{
+	position: absolute;
+	top:0;
+	left: 0;
+	right:0;
+	bottom: 0;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a29ca9+0,95909b+99 */
+background: #a29ca9; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #a29ca9 0%, #95909b 99%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #a29ca9 0%,#95909b 99%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #a29ca9 0%,#95909b 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a29ca9', endColorstr='#95909b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.9s ease 0s; 
+}
+
+.formationWrapper:hover:after{
+	opacity: 0.4;
+}
+
+.formationWrapper h1{
+	color:white;
+	font-size: 50px;
+	letter-spacing: 2px;
+	-webkit-transition: all 0.15s ease 0s; 
+	position: relative;
+	z-index: 10;
+}
+
+.formationWrapper:hover h1{
+	transform: translateY(-10px);
+}
+
+.formationWrapper button{
+	position: absolute;
+	transform: translatey(60px);
+	-webkit-appearance: none;
+	border: none;
+	background: none;
+	color:white;
+	width: 250px;
+	height:50px;
+	font-size: 20px;
+	padding: 0;
+	margin: 0;
+	outline: none;
+	z-index: 10;
+}
+
+.formationWrapper button span{
+	display: block;
+	position: relative;
+	line-height: 50px;
+	height: 50px;
+	cursor: pointer;
+}
+
+.formationWrapper button > span:after{
+	content:'';
+	position: absolute;
+	top:0;
+	left: 50%;
+	width: 20px;
+	height: 0;
+	
+	border: 1px solid white;
+	border-left: none;
+	border-bottom: none;
+	
+	    transition: height 0.15s ease-out, width 0.15s ease-out 0.15s;
+}
+
+.formationWrapper:hover button > span:after{
+	width: calc(50% - 1px);
+	height: calc(100% - 2px);
+	transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
+}
+
+.formationWrapper button > span:before{
+	content:'';
+	position: absolute;
+	top:0;
+	right: 50%;
+	width: 20px;
+	height: 0;
+	
+	border: 1px solid white;
+	border-right: none;
+	border-bottom: none;
+	
+	    transition: height 0.15s ease-out, width 0.15s ease-out 0.15s;
+}
+
+.formationWrapper:hover button > span:before{
+	width: calc(50% - 1px);
+	height: calc(100% - 2px);
+	transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
+}
+
+.formationWrapper button > span > span:before{
+	content:'';
+	position: absolute;
+	bottom:0;
+	right: 0%;
+	width: 1px;
+	height: 1px;
+	opacity: 0;
+	
+}
+
+.formationWrapper:hover button > span > span:before{
+	opacity: 1;
+	border-bottom: 1px solid white;
+	width: calc(50%);
+	height: 1px;
+	transition: opacity 0s ease-out 0.29s, width 0.15s ease-out 0.3s;
+}
+
+.formationWrapper button > span > span:after{
+	content:'';
+	position: absolute;
+	bottom:0;
+	left: 0%;
+	width: 1px;
+	height: 1px;
+	opacity: 0;
+	
+}
+
+.formationWrapper:hover button > span > span:after{
+	opacity: 1;
+	border-bottom: 1px solid white;
+	width: calc(50%);
+	height: 1px;
+	transition: opacity 0s ease-out 0.29s, width 0.15s ease-out 0.3s;
+}
+
+.formationWrapper button > span > span > span{
+	transition: color 0.15s ease-out 0.3s;
+	color: transparent;
+}
+
+.formationWrapper:hover button > span > span > span{
+	color:white;
+}
+
+.formationWrapper button > span > span > span:after{
+	position: absolute;
+	top:0;left:0;right:0;bottom:0;
+	color:#1f2e4d;
+	content: attr(data-attr-span);
+	width: 0%;
+	height: 100%;
+	background:white;
+	white-space: nowrap;
+	text-align: center;
+	margin: auto;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	transition: width 0.2s;
+}
+
+.formationWrapper button:hover > span > span > span:after{
+	width: 100%;
+}
+/* image */
+
+.product-img {
+	margin-bottom: 0.5rem;
+	width: 100%;
+  }
+  
+  .product-img img {
+	width: 100%;
+  }
+ /*formation container pour que footer reste en bas */
+
+ .formations-container{
+	margin-bottom: 14em;
+ }
+
+/************************************************/
+/******         MEDIA QUERIES            ********/
+/************************************************/
+@media(max-width:768px){
+
+    .formationWrapper{
+        height: 310px;
+        min-width: 320px;
+    }
+
+	
+		.formationWrapper button > span > span > span{
+			background-color: #ddd;
+			color: #222;
+		}
+	
+		.formationWrapper button > span > span > span:after{
+			color: #222;
+			overflow: visible;
+		}
+
+		.formationWrapper button{
+			z-index: 1;
+		}
+  }
+
+  @media(max-width:568px){
+
+
+
+
+}

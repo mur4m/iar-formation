@@ -1,0 +1,180 @@
+.image {
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+}
+
+
+
+.header-hr {
+    width: 900px;
+    height: 6px;
+    background-color: #0077BF;
+}
+
+.first-section {
+    min-width: 350px;
+    min-height: 350px;
+
+}
+
+
+.second-section {
+    width: 100%;
+    height: 70vh;
+    background: white;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.icon {
+    text-align: center;
+}
+
+h2 {
+    color: #0077BF;
+    padding-bottom: 30px;
+}
+
+.fa-handshake,
+.fa-chalkboard-teacher,
+.fa-lock,
+.fa-euro-sign {
+    color: #0077BF;
+    background: whitesmoke;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 40px;
+    text-align: center;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+.p-icon {
+    color: whitesmoke;
+}
+
+
+.third-section {
+    width: 100%;
+    height: 70vh;
+    background: #eee;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.p-mesure {
+    height: auto;
+    text-align: center;
+    padding: 60px 60px;
+    margin: 8px 8px;
+}
+
+
+
+/************************************************/
+/******         MEDIA QUERIES            ********/
+/************************************************/
+
+
+@media(max-width:1083px) {
+    .first-section {
+        height: auto;
+
+    }
+
+    .second-section {
+        height: auto;
+        margin-top: 30px;
+    }
+
+
+    .third-section {
+        height: auto;
+    }
+
+    .p-mesure {
+        height: auto;
+    }
+
+    .icon {
+        height: auto;
+    }
+
+
+}
+
+
+@media(max-width:768px) {
+    .first-section {
+        height: auto;
+    }
+
+    .second-section {
+        height: auto;
+        /* margin-top: 30px; */
+    }
+
+
+    .third-section {
+        height: 75vh;
+    }
+
+    .p-mesure {
+        height: auto;
+    }
+
+    .icon {
+        height: auto;
+    }
+
+}
+
+
+
+
+@media(max-width:568px) {
+    .first-section {
+        height: auto;
+    }
+
+    .second-section {
+        height: auto;
+        margin-top: 30px;
+    }
+
+
+    .third-section {
+        height: auto;
+    }
+
+    .p-mesure {
+        height: auto;
+    }
+
+    .image {
+        /* display: flex; */
+       justify-content: center;
+
+
+    }
+
+    .icons {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-left: 0%;
+    }
+
+}
+
+

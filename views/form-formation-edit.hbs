@@ -1,0 +1,43 @@
+<body class="bodyaddformation">
+  <div class="edit-container">
+  <form method="post" action="/form-edit/{{formations._id}}" class="edit-product-form" enctype="multipart/form-data">
+    <h2 class="edit-formation"> Edit formation</h3>
+
+    <div class="form-item-wrapper flexed-item">
+      <label for="sneaker-name" class="label-name label">Intitulé</label>
+      <input id="sneaker-name" type="text" class="input-text input" placeholder="Intitulé" value="{{formation.title}}" name="title">
+    </div>
+    <div class="form-item-wrapper flexed-item">
+      <label for="sneaker-ref" class="label-ref label">Description</label>
+      <input id="sneaker-ref" type="text" class="input-text input" placeholder="Description" value="{{formation.description}}" name="description">
+    </div>
+    <div class="form-item-wrapper flexed-item">
+      <label for="sneaker-size" class="label-ref label">Description courte</label>
+      <input id="sneaker-size" type="text" class="input-text input" placeholder="Description courte" value="{{formation.minidescription}}" name="minidescription">
+    </div>
+    <div class="form-item-wrapper flexed-item">
+      <label for="sneaker-descr" class="label-descr label">Image</label>
+      <input id="sneaker-descr" type="file" class="input-text input" placeholder="Image" value="{{formation.image}}" name="image">
+    </div>
+
+    <div class="form-item-wrapper flexed-item">
+      <label for="sneaker-main-cat" class="label-main-cat label">Categorie</label>
+      <select id="main_category" class="select" required name="category">
+        <option value="-1" disabled selected>Choisir une categorie</option>
+        <option value="men">développement personel</option>
+        <option value="women">développement professionnel</option>
+        <option value="kids">enfants</option>
+      </select>
+    </div>
+    {{!-- <div class="form-item-wrapper flexed-item">
+      <label class="label">Tags</label>
+      {{> form_tags_select}}
+    </div> --}}
+    <button class="edit-form-btn">Modifier cette formation</button>
+  </form>
+</div>  
+
+
+
+
+</body>

@@ -1,0 +1,48 @@
+<body class="lettres">
+
+<div class="message-container">
+    <h1 class="hache-gestion-mess">Gérer vos messages</h1>
+    <hr class="hr-gestion-mess">
+  <table class="manage-message">
+    <thead>
+      <tr class="table-row">
+        <th class="table-head">Expediteurs</th>
+        <th class="table-head">E-mail</th>
+        <th class="table-head">Message</th>
+        <th class="table-head">Delete</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      {{#each messages}}
+      <tr class="table-row">
+  <td class="table-division">
+  <div>{{this.name}}</div>
+</td>
+<td class="table-division">
+  <div>{{this.email}}</div>
+</td>
+<td class="table-division">
+  <div>{{this.message}}</div>
+</td>
+
+<td class="table-division">
+  <a href="/mess-delete/{{this._id}}" data-id-message="{{this._id}}" aria-hidden="true">
+    <i class="fa fa-trash table-icon"></i>
+  </a>
+</td> 
+     </tr>
+      {{/each}}
+      {{#unless messages}}
+      <tr>
+        <td colspan="6">Il n'y a aucun message</td>
+      </tr>
+      {{/unless}}
+    </tbody>
+  </table>
+
+</div>
+
+</body>
+
+

@@ -1,0 +1,54 @@
+<body class="bodyaddformation">
+    
+<div class="manage-container">
+    <h1 class="hache-gestion-form">Gérer vos formations</h1>
+    <hr class="hr-gestion-form">
+    <table class="product-manage-table">
+        <thead>
+            <tr class="table-row">
+                <th class="table-head">Image</th>
+                <th class="table-head">Titre</th>
+                <th class="table-head">Mini Description</th>
+                <th class="table-head"> Description</th>
+                <th class="table-head">Edit</th>
+                <th class="table-head">Delete</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {{#each formations}}
+            <tr class="table-row">
+                <td class="table-division">
+                    <div class="formation-img">
+                        <img src="{{this.image}}" alt="img" class="table-image" />
+                    </div>
+                </td>
+                <td class="table-division">
+                    <div>{{this.title}}</div>
+                </td>
+                <td class="table-division">
+                    <div>{{this.minidescription}}</div>
+                </td>
+                <td class="table-division">
+                    <div>{{this.description}}</div>
+                </td>
+                <td class="table-division">
+                    <a href="/form-edit/{{this._id}}" data-id-formation="{{this._id}}"><i
+                            class="fa fa-edit table-icon"></i> </a>
+                </td>
+                <td class="table-division">
+                    <a href="/form-delete/{{this._id}}" data-id-formation="{{this._id}}" aria-hidden="true">
+                        <i class="fa fa-trash table-icon"></i>
+                    </a>
+                </td>
+            </tr>
+            {{/each}}
+            {{#unless formations}}
+            <tr>
+                <td colspan="6" class="no-formations">Il n'y a aucune formations pour le moment</td>
+            </tr>
+            {{/unless}}
+        </tbody>
+    </table>
+</div>
+</body>

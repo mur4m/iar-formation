@@ -1,0 +1,58 @@
+/*      MANAGE-MESSAGE     */
+
+
+.lettres {
+    background-image: url(./../images/paperplane.jpeg);
+    background-repeat: no-repeat;
+    object-fit: fill;
+}
+
+.message-container {
+    margin: auto;
+    min-width: 200px;
+    text-align: center;
+    padding-top: 100px;
+    border: 50px;
+    margin-bottom: 15%;
+    margin-left: 2em;
+    margin-right: 2em;
+    padding-bottom: 14em;
+}
+.hache-gestion-mess{
+    color: white;
+}
+
+.hr-gestion-mess{
+    background: white;
+}
+
+table {
+    border-collapse: collapse;
+    border-style: hidden;
+    margin: auto;
+    box-shadow: 0px 5px 50px #ddd, 0 5px 20px rgb(0, 0, 0);
+    margin-top: 2em;  
+}
+
+table td, table th {
+    border: 2px solid gray  ;
+}
+
+th {
+    background-color: rgb(251, 142, 70);
+    color: white;
+    height: 50px;
+    padding: 10px;
+}
+
+td {
+    padding: 15px;
+} 
+
+tr:nth-child(odd) {background-color: #f2f2f2;}
+
+tr:nth-child(even) {background-color: #f1d4a5;}
+
+.fa-trash{
+    color: tomato;
+}

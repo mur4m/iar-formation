@@ -1,0 +1,61 @@
+{{!-- <h1>Toutes les formations</h1>
+ <section class="allformations">
+     <hr>
+     {{#each formations}}
+     <figure>
+         <title>{{this.title}}</title>
+         {{this.image}}
+         <figcaption>
+         {{this.minidescription}}    
+         </figcaption>
+     </figure>
+     {{/each}}
+     {{#unless formations}}
+     <h2>
+      Il n'y a aucune formation pour le moment
+    </h2>
+      {{/unless}}
+ </section> --}}
+<!-- THIS IS GOING TO BE A MAGENTO BUTTON -->
+
+<body class="body-formation">
+    <div class="hache-title">
+        <h1 class="hache-all-formations">Toutes nos formations</h1>
+        <hr class="hr-all-formations">
+    </div>
+    {{!-- <div class="formations-container"> --}}
+    <section class="formationbox">
+        {{!-- <div class="single-formation"> --}}
+        {{#each formations}}
+        {{> mini_formation }}
+        {{/each}}
+        {{#unless formations}}
+        <h2 class="no-formations">
+            Il n'y a aucune formation pour le moment
+        </h2>
+        {{/unless}}
+        {{!-- </div> --}}
+    </section>
+    </div>
+</body>
+{{!-- <div class="oneBox">
+    <a href="/one-formation/{{this._id}}" class="formation-wrapper">
+
+    <div class="product-img">
+        <img src="{{this.image}}" alt="{{this.name}} : what a nice pair of kicks">
+    </div>
+
+	<div class="formationWrapper">
+		<h1>{{this.title}}</h1>
+		<button>
+			<span>
+				<span>
+					<span data-attr-span="En savoir plus">
+					</span>
+				</span>
+			</span>
+		</button>
+        
+	</div>
+    </a>
+</div> --}}
