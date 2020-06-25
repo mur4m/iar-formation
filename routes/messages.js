@@ -18,7 +18,7 @@ router.get(['/sendmessage', "/manage-messages"], protectAdminRoute,function(req,
   .find()
   .then((dbRres) => {
   res.render('manage-messages', { messages: dbRres });
-})
+}) 
 .catch(next);
 });
 
