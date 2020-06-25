@@ -4,7 +4,7 @@ const userModel = require("./../models/User");
 const protectAdminRoute = require("../middlewares/protectAdminRoute")
 
 
-router.get('/manage-users', function (req, res, next) {
+router.get('/manage-users', protectAdminRoute,function (req, res, next) {
     userModel
         .find()
         .then((dbRres) => {
@@ -65,7 +65,7 @@ router.get('/manage-users', function (req, res, next) {
 /******         delete users             ********/
 /************************************************/
 
-router.get("/user-delete/:_id", (req, res, next) => {
+router.get("/user-delete/:id", protectAdminRoute, (req, res, next) => {
     userModel
         .findByIdAndDelete(req.params.id)
         .then((dbRes) => res.redirect("/manage-users"))
@@ -77,12 +77,12 @@ router.get("/user-delete/:_id", (req, res, next) => {
 /******          edit users              ********/
 /************************************************/
 
-router.get("/user-edit/:id", (req, res, next) => {
+router.get("/user-edit/:id", protectAdminRoute, (req, res, next) => {
     console.log("whats in req.params.id", req.params.id)
     userModel
         .findById(req.params.id)
         .then((dbRes) => res.render("form-user-edit", {
-            user: dbRes
+            users: dbRes
         }))
         .catch(next)
 });

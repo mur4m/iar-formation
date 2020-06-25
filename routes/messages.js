@@ -8,7 +8,7 @@ const protectAdminRoute = require("../middlewares/protectAdminRoute")
 
 /* GET dashboard page*/
 
-router.get('/dashboard', function(req,res,next){
+router.get('/dashboard',protectAdminRoute, function(req,res,next){
   res.render('dashboard')
 });
 
@@ -36,7 +36,7 @@ router.post("/sendmessage", (req,res,next) => {
 
 /* delete */
 
-router.get("/mess-delete/:id", (req, res, next) => {
+router.get("/mess-delete/:id", protectAdminRoute,(req, res, next) => {
   msgModel
       .findByIdAndDelete(req.params.id)
       .then((dbRes) => res.redirect("/manage-messages"))
