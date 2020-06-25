@@ -21,7 +21,7 @@ router.get('/formations', function(req, res, next) {
 
 /* GET contact page. */
 router.get('/contact', function(req, res, next) {
-    res.render('contact', { title: 'sur-mesure' });
+    res.render('contact', { title: 'contact' });
   });
 
 /* GET sur mesure page. */
