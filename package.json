@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "s": "nodemon ./bin/www -e .hbs,.js"
+    "s": "nodemon ./bin/www -e .hbs,.js",
+    "populate": "node firstUser.js"
   },
   "dependencies": {
     "bcrypt": "^5.0.0",
