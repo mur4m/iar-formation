@@ -3,22 +3,21 @@ var router = express.Router();
 const msgModel = require("../models/Message");
 const protectAdminRoute = require("../middlewares/protectAdminRoute")
 
-
-
+ 
 
 /* GET dashboard page*/
 
-router.get('/dashboard',protectAdminRoute, function(req,res,next){
+router.get('/dashboard',protectAdminRoute,function(req,res,next){
   res.render('dashboard')
 });
 
 /* GET manage-messages page. */
-router.get(['/sendmessage', "/manage-messages"], function(req, res, next) {
+router.get(['/sendmessage', "/manage-messages"], protectAdminRoute,function(req, res, next) {
   msgModel
   .find()
   .then((dbRres) => {
   res.render('manage-messages', { messages: dbRres });
-}) 
+})
 .catch(next);
 });
 
@@ -29,7 +28,7 @@ router.post("/sendmessage", (req,res,next) => {
   msgModel.create(message)
   .then((dbRres) => {
     console.log("produit ajouté en bdd >>> ", dbRres);
-    res.redirect("/sendmessage")
+    res.redirect("/")
   })
   .catch(next);
 });

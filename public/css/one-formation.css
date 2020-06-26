@@ -3,24 +3,15 @@
 }
 
 .one-formation-box{
-    margin: 12em;  
-}
-
-.margin-formation{
-    display: block;
-    width: 1000px;
-    margin: auto;
-    padding-bottom: 14em;
-    flex-wrap: wrap;
-}
-
-.one-formation-mini{
-    height: 300px;
-    width: 800px;
-    display: block;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     color: white;
     flex-wrap: wrap;
+    padding-bottom: 19em;
+    text-align: center;
+    margin: 6em;
 }
 
 .hache-one-form{
@@ -29,4 +20,17 @@
 
 .hr-one-form{
     background: white;
+}
+
+@media(max-width:991px){
+    .one-formation-box{
+      padding-bottom: 29em;
+    }
+}
+
+@media(max-width:568px){
+    .one-formation-box{
+      padding-bottom: 4em;
+      margin: 5em 2em 0 2em;
+    }
 }
