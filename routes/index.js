@@ -26,7 +26,7 @@ router.get('/contact', function(req, res, next) {
 
 /* GET sur mesure page. */
 router.get('/Sur-mesure', function(req, res, next) {
-    res.render('Sur-mesure', { title: 'sur-mesure' });
+    res.render('sur-mesure', { title: 'sur-mesure' });
   });
 
   module.exports = router;
